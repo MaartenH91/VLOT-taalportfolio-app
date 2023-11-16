@@ -1,0 +1,39 @@
+button.btn {
+  background-color: var(--white);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px 0px 10px 0px;
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  width: 20%;
+  padding: 0.5rem 1.5rem;
+}
+
+button.btn:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.btn-div.align-right {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-div.align-right-teacher {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-button {
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+}
+
+.eol {
+  margin-bottom: 5vh
+}
+
+button.btn.full-width {
+  width: 100%;
+}

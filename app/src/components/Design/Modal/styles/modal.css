@@ -1,0 +1,46 @@
+.modal-dialog {
+    background-color: var(--dark-effect);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    padding: 3rem;
+    background-color: var(--white);
+    border: solid 3px var(--secondary-color);
+    width: 20vw;
+    border-radius: 10px 0 10px 0;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.modal-title {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.modal-header>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 7%;
+    cursor: pointer;
+}
+
+#andereTaalForm>label {
+    font-size: 4rem;
+}

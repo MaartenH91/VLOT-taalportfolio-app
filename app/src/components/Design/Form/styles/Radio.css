@@ -1,0 +1,4 @@
+input[type=radio] {
+  accent-color: var(--tertiary-color);
+
+}

@@ -1,0 +1,41 @@
+.field label {
+  width: 50%;
+}
+
+.field label p {
+  font-size: 0.8rem;
+  padding-left: 2vw;
+  line-height: 3.4vh;
+}
+
+@media screen and (min-width: 1600px) {
+  .field label p {
+    line-height: auto;
+    font-size: 1rem;
+  }
+}
+
+.field .choices {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.field > * > .choises > input {
+  height: 51vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=radio] {
+  width: 25%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

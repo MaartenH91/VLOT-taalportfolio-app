@@ -1,0 +1,14 @@
+.taalprofiel-overview {
+  margin-bottom: 2rem;
+}
+
+.language-options {
+  width: 65%;
+  margin: 2rem 0 0 6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language-options>* {
+  margin-left: 1rem;
+}

@@ -1,0 +1,22 @@
+.language-options {
+  width: 90%;
+  margin: 2rem 0 0 6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language-options>* {
+  margin-left: 1rem;
+}
+
+.taalprofiel-long-list {
+  width: 100%;
+}
+
+.taalprofiel-long-list > * > h2 {
+  margin: 2rem 0 -2rem 5rem;
+  width: fit-content;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color)
+}

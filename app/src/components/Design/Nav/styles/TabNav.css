@@ -1,0 +1,32 @@
+.tabNav {
+  margin-top: 2rem;
+  margin-left: 5vw;
+}
+
+.tabNav-button {
+  width: auto;
+  height: 4vh;
+  background-color: var(--white);
+  border: solid 3px var(--primary-color);
+  margin-right: 1vw;
+  border-radius: 10px 0 0 0;
+  border-bottom: none;
+}
+
+.tabNav-button>p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.tabNav-button:hover {
+  background-color: var(--secondary-color);
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.tabNav-button.active {
+  background-color: var(--secondary-color);
+}
