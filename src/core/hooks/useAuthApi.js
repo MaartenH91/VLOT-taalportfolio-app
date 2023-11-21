@@ -9,13 +9,14 @@ const useAuthApi = () => {
 
   const authFetch = useCallback(
     (url, config = {}) => {
-      console.log("url: " + url + " config: " + JSON.stringify(config))
       // add authorization header
       if (auth && auth.token) {
         config.headers = {
           ...(config.headers || {}),
           Authorization: `Bearer ${auth.token}`,
         };
+      console.log("url: " + url + " config: " + JSON.stringify(config))
+
       }
 
       return fetch(url, config)
