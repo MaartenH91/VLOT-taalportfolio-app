@@ -10,7 +10,8 @@ const useAuthApi = () => {
   const authFetch = useCallback(
     (url, config = {}) => {
       // add authorization header
-      console.log("auth: "+ auth + " auth token: " + auth.token)
+      console.log("test")
+      console.log(auth)
       if (auth && auth.token) {
         config.headers = {
           ...(config.headers || {}),
