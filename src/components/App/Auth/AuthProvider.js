@@ -39,19 +39,20 @@ const AuthProvider = ({ children }) => {
 
   console.log("handle login of logout")
   const handleLogout = () => {
-    setAuth(null);
     console.log("hopelijk niet dit")
+    setAuth(null);
   };
 
   const handleLogin = (auth) => {
-    setAuth(auth);
     console.log("handle login")
+    setAuth(auth);
   };
 
   return (
     <AuthContext.Provider
       value={{ auth, login: handleLogin, logout: handleLogout }}
     >
+      
       {children}
     </AuthContext.Provider>
   );
