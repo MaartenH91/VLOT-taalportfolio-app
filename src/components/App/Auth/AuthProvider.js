@@ -12,12 +12,13 @@ const getAuthFromStorage = () => {
     return JSON.parse(atob(auth));
   }
   console.log(auth)
-  return null;
+  return auth;
 };
 
 const saveAuthToStorage = (auth) => {
   // base67 encode
   localStorage.setItem(KEY, btoa(JSON.stringify(auth)));
+  console/log("saveauthtostorage")
 };
 
 // This is a provider that will be keeping track of the current user
@@ -38,6 +39,7 @@ const AuthProvider = ({ children }) => {
 
   const handleLogin = (auth) => {
     setAuth(auth);
+    console.log("handle login")
   };
 
   return (
