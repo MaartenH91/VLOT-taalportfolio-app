@@ -30,15 +30,16 @@ const AuthProvider = ({ children }) => {
     console.log("useeffect")
     if (auth) {
       saveAuthToStorage(auth);
-      console.log("useeffect "+auth)
-
     } else {
       localStorage.removeItem(KEY);
+      console.log("useeffect - remove")
     }
   }, [auth]);
 
+  console.log("handle login of logout")
   const handleLogout = () => {
     setAuth(null);
+    console.log("hopelijk niet dit")
   };
 
   const handleLogin = (auth) => {
