@@ -27,8 +27,11 @@ const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState(getAuthFromStorage());
 
   useEffect(() => {
+    console.log("useeffect")
     if (auth) {
       saveAuthToStorage(auth);
+      console.log("useeffect "+auth)
+
     } else {
       localStorage.removeItem(KEY);
     }
