@@ -23,6 +23,7 @@ const saveAuthToStorage = (auth) => {
 
 // This is a provider that will be keeping track of the current user
 const AuthProvider = ({ children }) => {
+  console.log("authprovider")
   const [auth, setAuth] = useState(getAuthFromStorage());
 
   useEffect(() => {
