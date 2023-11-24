@@ -33,6 +33,7 @@ const AuthProvider = ({ children }) => {
     } else {
       localStorage.removeItem(KEY);
       console.log("useeffect - remove")
+      console.log(auth)
     }
   }, [auth]);
 
