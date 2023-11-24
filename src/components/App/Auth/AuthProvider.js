@@ -18,7 +18,7 @@ const getAuthFromStorage = () => {
 const saveAuthToStorage = (auth) => {
   // base67 encode
   localStorage.setItem(KEY, btoa(JSON.stringify(auth)));
-  console/log("saveauthtostorage")
+  console.log("saveauthtostorage")
 };
 
 // This is a provider that will be keeping track of the current user
