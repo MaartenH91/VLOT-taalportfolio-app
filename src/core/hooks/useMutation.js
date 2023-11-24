@@ -34,6 +34,7 @@ const useMutation = () => {
         headers: headers,
         body: body,
       });
+      console.log("mutation")
       if (options.onSuccess) {
         options.onSuccess(result);
         setIsLoading(false);
