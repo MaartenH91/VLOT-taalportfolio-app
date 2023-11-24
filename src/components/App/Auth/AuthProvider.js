@@ -5,7 +5,6 @@ const KEY = "VLOT_TAALPORTFOLIO_AUTH";
 const AuthContext = createContext();
 
 const getAuthFromStorage = () => {
-  console.log("getauthfromstorage")
   const auth = localStorage.getItem(KEY);
   if (auth) {
     // base64 encode

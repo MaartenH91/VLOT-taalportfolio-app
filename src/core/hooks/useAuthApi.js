@@ -13,12 +13,13 @@ const useAuthApi = () => {
       // hier zit een fout!!!!
       console.log("test")
       console.log(auth)
+      console.log("url: " + url + " config: " + JSON.stringify(config))
+
       if (auth && auth.token) {
         config.headers = {
           ...(config.headers || {}),
           Authorization: `Bearer ${auth.token}`,
         };
-      console.log("url: " + url + " config: " + JSON.stringify(config))
 
       }
 
