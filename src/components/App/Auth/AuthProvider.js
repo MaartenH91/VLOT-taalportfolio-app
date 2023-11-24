@@ -10,7 +10,7 @@ const getAuthFromStorage = () => {
     // base64 encode
     return JSON.parse(atob(auth));
   }
-  return null;
+  return auth;
 };
 
 const saveAuthToStorage = (auth) => {
