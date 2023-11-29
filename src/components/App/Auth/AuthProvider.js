@@ -12,7 +12,7 @@ const getAuthFromStorage = () => {
     return JSON.parse(atob(auth));
   }
   console.log(auth)
-  return auth;
+  return null;
 };
 
 const saveAuthToStorage = (auth) => {
@@ -23,11 +23,9 @@ const saveAuthToStorage = (auth) => {
 
 // This is a provider that will be keeping track of the current user
 const AuthProvider = ({ children }) => {
-  console.log("authprovider")
   const [auth, setAuth] = useState(getAuthFromStorage());
 
   useEffect(() => {
-    console.log("useeffect")
     if (auth) {
       saveAuthToStorage(auth);
     } else {

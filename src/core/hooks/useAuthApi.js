@@ -8,7 +8,7 @@ const useAuthApi = () => {
   const { auth, logout } = useAuthContext();
 
   const authFetch = useCallback(
-    (url, config = {}) => {
+    (url, config = {mode:"cors"}) => {
       // add authorization header
       // hier zit een fout!!!!
       console.log("test")
