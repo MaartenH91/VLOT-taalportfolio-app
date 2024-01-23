@@ -13,6 +13,9 @@ const AccountInfo = () => {
         <p>
           {auth.user.voornaam} {auth.user.achternaam}
         </p>
+        <p>
+          {auth.voornaam} {auth.achternaam}
+        </p>
         <p className="user-id">{auth.user.id}</p>
       </div>
     </Link>
