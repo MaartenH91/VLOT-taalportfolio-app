@@ -12,6 +12,7 @@ const getYear = (user) => {
   // If the user is a student, get the year from the klas
   if (isStudent(user)) {
     const klas = user.user.klas.klas.split("");
+    klas = klas[1]
     klas.map((item) => {
       if (!isNaN(item)) {
         year = parseFloat(item);
