@@ -13,7 +13,7 @@ const AccountInfo = () => {
         <p>
           {auth.user.voornaam} {auth.user.achternaam}
         </p>
-        <p className="user-id">{auth.user.role}</p>
+        <p className="user-id">{auth.user.rol}</p>
       </div>
     </Link>
   );
