@@ -6,7 +6,7 @@ const Userdetails = () => {
     const {auth} = useAuthContext();
 
     return(
-        <div className="">
+        <div className="details">
             <h2>Profiel</h2>
             <div className="details-card">
                 <div className="details-picture">
