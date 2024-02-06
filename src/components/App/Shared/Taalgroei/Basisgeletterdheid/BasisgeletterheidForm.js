@@ -77,6 +77,7 @@ const BasisgeletterdheidForm = ({
             >
               <h2>{vaardigheid.label}</h2>
               {data.map((element) => {
+                <p>{element}</p>
                 if (
                   element.basisgeletterdheid.vaardigheid === vaardigheid.label
                 ) {
