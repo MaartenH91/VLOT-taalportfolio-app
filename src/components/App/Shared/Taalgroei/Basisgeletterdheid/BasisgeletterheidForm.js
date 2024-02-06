@@ -76,7 +76,7 @@ const BasisgeletterdheidForm = ({
               className="basisgeletterdheid-form__subpart"
             >
               <h2>{vaardigheid.label}</h2>
-              <p>{data}</p>
+              <p>Data: {data}</p>
               {data.map((element) => {
                 <p>{element}</p>
                 if (
