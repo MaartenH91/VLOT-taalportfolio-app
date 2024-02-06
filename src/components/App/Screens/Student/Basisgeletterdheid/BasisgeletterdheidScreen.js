@@ -7,7 +7,7 @@ const BasisgeletterdheidScreen = () => {
   const { auth } = useAuthContext();
 
   const { data, isLoading } = useFetch(
-    `/basisgeletterdheid/leerling/${auth.user.id}}`
+    `/basisgeletterdheid/leerling/${auth.user.id}`
   );
 
   return (
