@@ -70,7 +70,7 @@ const TaalprofielScreen = () => {
   // No answers screen
   if (answers.length === 0 || !answers) {
     return (
-      <Message message="Er zijn nog geen vragen voor deze taal beschikbaarrr..." />
+      <Message message="Er zijn nog geen vragen voor deze taal beschikbaar..." />
     );
   }
 };
