@@ -16,15 +16,15 @@ const useFetch = (path) => {
   }, [path, authFetch]);
 
   const invalidate = () => {
-    console.log("Error: "+error)
-    console.log("Data: " + data)
+    console.log("Error invalidate: "+error)
+    console.log("Data invalidate: " + data)
       fetchData();
 
   };
 
   useEffect(() => {
-    console.log("Error: "+error)
-    console.log("Data: " + data)
+    console.log("Error useeffect: "+error)
+    console.log("Data useeffect: " + data)
   
     return fetchData();
   }, [fetchData]);
