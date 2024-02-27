@@ -16,16 +16,20 @@ const useFetch = (path) => {
   }, [path, authFetch]);
 
   const invalidate = () => {
-    fetchData();
+    console.log("Error: "+error)
+    console.log("Data: " + data)
+      fetchData();
+
   };
 
   useEffect(() => {
+    console.log("Error: "+error)
+    console.log("Data: " + data)
+  
     return fetchData();
   }, [fetchData]);
 
   const isLoading = !error && !data;
-  console.log("Error: "+error)
-  console.log("Data: " + data)
   return {
     isLoading,
     data,
