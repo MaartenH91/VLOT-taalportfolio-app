@@ -24,7 +24,8 @@ const useFetch = (path) => {
   }, [fetchData]);
 
   const isLoading = !error && !data;
-
+  console.log("Error: "+error)
+  console.log("Data: " + data)
   return {
     isLoading,
     data,
