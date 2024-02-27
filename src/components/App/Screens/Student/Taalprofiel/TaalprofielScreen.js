@@ -39,6 +39,7 @@ const TaalprofielScreen = () => {
         <TaalprofielOverview answers={answers} handleChange={invalidate} />
         {/* if the current language is not made up show this
             This section is currently left out.*/}
+            testje
         {currentLanguage.split(" ").length === 1 && (
           <section className="vlag">
             <img
