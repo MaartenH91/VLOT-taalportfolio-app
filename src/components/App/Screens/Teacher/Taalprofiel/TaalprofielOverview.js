@@ -43,7 +43,6 @@ const TaalprofielOverview = ({ student, klas, onUpdate }) => {
   return (
     <>
       {isLoading && <Loading />}
-      <p>{answers}</p>
       {answers && answers.length > 0 && students && (
         <Overview
           answers={answers}
