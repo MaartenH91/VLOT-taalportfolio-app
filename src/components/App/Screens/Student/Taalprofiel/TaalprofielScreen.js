@@ -39,8 +39,7 @@ const TaalprofielScreen = () => {
         <TaalprofielOverview answers={answers} handleChange={invalidate} />
         {/* if the current language is not made up show this
             This section is currently left out.*/}
-            testje
-        {currentLanguage.split(" ").length === 1 && (
+        {/* {currentLanguage.split(" ").length === 1 && (
           <section className="vlag">
             <img
               src={
@@ -58,7 +57,7 @@ const TaalprofielScreen = () => {
               width="100%"
             ></img>
           </section>
-        )}
+        )} */}
       </>
     );
   }
@@ -71,7 +70,7 @@ const TaalprofielScreen = () => {
   // No answers screen
   if (answers.length === 0 || !answers) {
     return (
-      <Message message="Er zijn nog geen vragen voor deze taal beschikbaar..." />
+      <Message message="Er zijn nog geen vragen voor deze taal beschikbaarrr..." />
     );
   }
 };
